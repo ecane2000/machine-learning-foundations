@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/ecane/Library/CloudStorage/GoogleDrive-ecane2000@gmail.com/Other computers/My Laptop/Google Drive/Project_VSC/machine-learning-foundations/.venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
